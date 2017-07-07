@@ -9,6 +9,7 @@ This app converts Celcius, Fahrenheit or Rankine to Kelvins. There are two apps.
 #### Client-Server
 
 Source Code:
+
     - app.js
     - views/base.pug
     - views/convert.pug
@@ -29,6 +30,7 @@ The back end is running on an [express](http://expressjs.com/) server with node.
 #### Client-Side
 
 Source Code:
+
     - static/client-index.html
     - static/client-script.js
     - static/style.css
