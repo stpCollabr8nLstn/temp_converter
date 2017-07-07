@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/png" href="logo.png"/>
-  <title>Temp Converter</title>
+  <title>Convert It</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -22,24 +22,24 @@
     <ul id="menu">
       <li><div class="fahrenheit">Fahrenheit</div></li>
       <li><div class="celcius">Celcius</div></li>
+      <li><div class="rankine">Rankine</div></li>
     </ul>
   </div>
   <div class="convert-container">
-    <form action="/convert" method="post" class="scale-spin hide">
-      <p>
-        <label for="spinner" class="scale"></label>
-        <input id="spinner" name="value">
-      </p>
-      <button type="submit">Convert!</button>
+    <form action="" method="get" class="scale-spin">
+      <label for="spinner" class="scale">&deg;F: </label>
+      <input id="spinner" name="spin_value" />
+      <input id="scale-input" class="scale-in" name="scale_input" hidden />
+      <br />
+      <button class="convert" type="submit">Convert!</button>
     </form>
     <div class="kelvins">
-      <label for="kelvins">&deg;&#8490; : </label>
-      <input class="k-input" type="text" name="kelvins" value="" readonly>
+      <label for="kelvins">&deg;K: </label>
+      <input class="k-input" type="text" name="kelvins" value="" readonly />
     </div>
   </div>
 </div>
 
-
 </body>
-<script src="script.js"></script>
+<script src="client_script.js"></script>
 </html>

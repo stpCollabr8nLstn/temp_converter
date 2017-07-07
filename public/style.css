@@ -44,6 +44,10 @@ header img {
   margin-bottom: 0;
 }
 
+.ui-menu-item {
+  font-weight: normal;
+}
+
 .ui-state-active:hover,
 .ui-state-active:active
  {
@@ -63,10 +67,12 @@ header img {
   justify-content: center;
   padding-left: 15px;
   margin-top: 0;
+  margin-left: 15px;
 }
 
 button {
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 30px;
   background: #990000;
   border-radius: 5px;
   border: none;
@@ -75,6 +81,8 @@ button {
   font-weight: bold;
   font-family: inherit;
   font-size: inherit;
+  float: right;
+  width: 130px;
 }
 
 .kelvins {
@@ -82,20 +90,29 @@ button {
 }
 
 input, .ui-widget input {
+  font-family: monospace;
   height: 30px;
-  width: 55px;
+  width: 85px;
   border: 2px solid #CDC0E4;
   border-radius: 5px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
   padding: 5px;
+  text-align: center;
 }
 
 input.k-input {
   display: inline;
+  margin-left: 15px;
+  font-size: 1em;
+  width: 130px;
 }
 
 .hide {
   display: none;
+}
+
+a.ui-button {
+  background: #CDC0E4;
 }

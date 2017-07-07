@@ -1,0 +1,9 @@
+extends base.pug
+
+block form
+  form.scale-spin.hide(action="/", method="post")
+    label.scale(for="spinner")
+    input(id="spinner" name="spin_value")
+    input.scale-in(id="scale-input", name="scale_input" hidden)
+    br
+    button.convert(type="submit") Convert!

@@ -1,0 +1,13 @@
+extends base.pug
+
+block form
+  form.scale-spin(action="/", method="POST")
+    label.scale(for="spinner")= scale
+    input(id="spinner" name="spin_value" value=temp)
+    input.scale-in(id="scale-input", name="scale_input" hidden)
+    br
+    button.convert(type="submit") Convert!
+block result
+  div.kelvins
+    label(for="kelvins") &deg;K:
+    input.k-input(type="text", name="kelvins", value=kelvins readonly)
